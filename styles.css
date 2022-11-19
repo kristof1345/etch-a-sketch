@@ -1,1 +1,54 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
 
+body {
+  background-color: rgb(38, 36, 36);
+}
+
+#container {
+  display: grid;
+  grid-gap: 0px;
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  left: 450px;
+  top: 70px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  box-shadow: 0 0 15px rgb(37, 90, 88);
+}
+
+button {
+  display: block;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 30px;
+  color: rgb(0, 255, 217);
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(36, 147, 130),
+    rgb(60, 65, 63)
+  );
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgb(52, 134, 131);
+}
+#wrapper {
+  height: 95vh;
+  width: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item {
+  padding: 0px;
+  border: 1px solid rgb(77, 75, 75);
+  text-align: center;
+}

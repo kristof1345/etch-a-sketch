@@ -14,6 +14,19 @@
     />
   </head>
   <body>
+    <div id="wrapper">
+      <button onclick="removeAllChildNodes(container);makeRows(16, 16);">
+        16x16
+      </button>
+      <button onclick="removeAllChildNodes(container);makeRows(32, 32);">
+        32x32
+      </button>
+      <button onclick="removeAllChildNodes(container);makeRows(64, 64);">
+        64x64
+      </button>
+    </div>
+
+    <div id="container"></div>
     <script src="js.js"></script>
   </body>
 </html>
